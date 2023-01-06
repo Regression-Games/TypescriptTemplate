@@ -9,9 +9,8 @@ Your bot must have an `index.ts` file with the following code:
 
 ```javascript
 import { RGBot } from "rg-bot";
-import { EventEmitter } from "events";
 
-export function configureBot(bot: RGBot, matchInfoEmitter: EventEmitter) {
+export function configureBot(bot: RGBot) {
   // Bot logic here
 }
 ```
@@ -22,7 +21,7 @@ Here is an example of the `configureBot` function with some basic logic that wil
 anything it sees in chat from other players.
 
 ```javascript
-export function configureBot(bot: RGBot,  matchInfoEmitter: EventEmitter) {
+export function configureBot(bot: RGBot) {
 
   // Every time a player says something in the game, 
   // do something with that player's username and their message
