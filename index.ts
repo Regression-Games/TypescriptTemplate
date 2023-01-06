@@ -1,10 +1,11 @@
 import { RGBot } from "rg-bot";
+import { EventEmitter } from "events";
 
 /**
  * This strategy is the simplest example of how to get started with the rg-bot package.
  * The Bot will run around and gather Poppies until it has 100 in its inventory.
  */
-export function configureBot(bot: RGBot) {
+export function configureBot(bot: RGBot, matchInfoEmitter: EventEmitter) {
 
     bot.setDebug(true);
 
