@@ -25,7 +25,7 @@ export function configureBot(bot: RGBot) {
 
   // Every time a player says something in the game, 
   // do something with that player's username and their message
-  bot.on('chat', (username, message) => {
+  bot.on('chat', (username: string, message: string) => {
 
     // If the username of the speaker is equal to the username of this bot, 
     // don't do anything else. This is because we don't want the bot to repeat 
